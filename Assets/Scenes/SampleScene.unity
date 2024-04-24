@@ -371,22 +371,20 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: 12.91156, y: -5.133492, z: 3.536261}
-      - {x: 13.91156, y: -4.633492, z: 3.536261}
-      - {x: -6.1848927, y: -6.046764, z: -9.731958}
-      - {x: -5.856576, y: -5.8411174, z: -8.683189}
-      - {x: -5.0756693, y: -5.351984, z: -6.1886706}
-      - {x: -5.536253, y: 0.7406868, z: -2.2530394}
-      - {x: -9.150988, y: 0.9271469, z: -0.20143557}
-      - {x: -10.583704, y: 1.0010512, z: 0.61172676}
-      - {x: -2.5214832, y: 0.8687372, z: 1.9054062}
-      - {x: -0.67824054, y: 1.8510442, z: 0.8580327}
-      - {x: 0.7271013, y: 2.5999837, z: 0.05948448}
-      - {x: 1.7890327, y: 2.2623582, z: 0.21710443}
-      - {x: 2.8509638, y: 1.9247332, z: 0.37472415}
-      - {x: 6.166621, y: 0.87056994, z: 0.8668585}
-      - {x: 9.76869, y: -6.704927, z: 3.536261}
-      isClosed: 1
+      - {x: 15.518307, y: -4.4723616, z: 3.9608676}
+      - {x: 15.508732, y: -5.586299, z: 3.865754}
+      - {x: -8.010393, y: -4.1964455, z: -7.1436987}
+      - {x: -7.682077, y: -3.9907987, z: -6.0949297}
+      - {x: -6.9011703, y: -3.5016654, z: -3.6004112}
+      - {x: -11.878332, y: 0.349653, z: 1.5476539}
+      - {x: -10.976488, y: 2.7774656, z: 2.386824}
+      - {x: -10.430223, y: 4.24804, z: 2.8951259}
+      - {x: -4.346984, y: 2.719056, z: 4.4936657}
+      - {x: -2.5037415, y: 3.7013628, z: 3.4462922}
+      - {x: -1.0983996, y: 4.450302, z: 2.647744}
+      - {x: -0.036468267, y: 4.1126766, z: 2.805364}
+      - {x: 1.0254629, y: 3.7750518, z: 2.9629836}
+      isClosed: 0
       space: 0
       controlMode: 0
       autoControlLength: 0.3
@@ -402,7 +400,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -419,7 +417,7 @@ MonoBehaviour:
     showPathOptions: 1
     showVertexPathDisplayOptions: 0
     showVertexPathOptions: 1
-    showNormals: 1
+    showNormals: 0
     showNormalsHelpInfo: 0
     tabIndex: 0
   initialized: 1
@@ -432,7 +430,7 @@ Transform:
   m_GameObject: {fileID: 956472334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.825501, y: -1.8503187, z: -2.5882595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

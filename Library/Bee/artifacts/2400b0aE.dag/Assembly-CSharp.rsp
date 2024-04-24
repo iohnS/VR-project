@@ -360,7 +360,8 @@
 "Assets/PathCreator/Examples/Scripts/PathSpawner.cs"
 "Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs"
 "Assets/Scripts/Movement.cs"
-"Assets/Scripts/TunnelMeshGenerator.cs"
+"Assets/Scripts/PropsGenerator.cs"
+"Assets/Scripts/Tunnel.cs"
 -langversion:9.0
 
 /deterministic

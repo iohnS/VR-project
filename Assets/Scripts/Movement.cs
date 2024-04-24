@@ -1,20 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using PathCreation;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
 
-    public PathCreator pathCreator;
-    public float speed = 1.0f;
-    float distanceTravelled;
-    // Update is called once per frame
+    public Tunnel tunnel;
+    void Start()
+    {
+        if (tunnel == null)
+        {
+            tunnel = transform.AddComponent<Tunnel>();
+        }
+    }
+
     void Update()
     {
-        distanceTravelled += speed * Time.deltaTime;
-        transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled);
-        transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled);
-        
+        transform.position = tunnel.currentPosition;
+        transform.rotation = tunnel.currentRotation;
     }
 }

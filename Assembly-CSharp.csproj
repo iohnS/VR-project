@@ -68,9 +68,10 @@
     <Compile Include="Assets/PathCreator/Examples/Scripts/PathSceneTool.cs" />
     <Compile Include="Assets/Scripts/Movement.cs" />
     <Compile Include="Assets/PathCreator/Examples/Scripts/PathFollower.cs" />
-    <Compile Include="Assets/Scripts/TunnelMeshGenerator.cs" />
     <Compile Include="Assets/PathCreator/Examples/Scripts/GeneratePathExample.cs" />
     <Compile Include="Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs" />
+    <Compile Include="Assets/Scripts/Tunnel.cs" />
+    <Compile Include="Assets/Scripts/PropsGenerator.cs" />
     <Compile Include="Assets/PathCreator/Examples/Scripts/PathSpawner.cs" />
     <Compile Include="Assets/PathCreator/Examples/Scripts/CylinderMeshCreator.cs" />
   </ItemGroup>
