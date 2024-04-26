@@ -3,14 +3,13 @@ using System.Linq;
 using PathCreation;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(PathCreator))] // Requires MeshFilter and MeshRenderer components to be attached to the same GameObject
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))] // Requires MeshFilter and MeshRenderer components to be attached to the same GameObject
 public class Tunnel : MonoBehaviour
 {
     public PathCreator pathCreator;
     public PropsGenerator propsGenerator;
     public GameObject ship;
 
-    
     [HideInInspector]
     public float distanceTravelled;
     public Vector3 currentPosition;
@@ -27,7 +26,6 @@ public class Tunnel : MonoBehaviour
     {
         segments = new List<GameObject>();
         pathCreator.transform.position = Vector3.zero;
-        transform.position = Vector3.zero;
 
         pathPoints = pathCreator.path.localPoints;
         normals = pathCreator.path.localNormals;
@@ -36,7 +34,6 @@ public class Tunnel : MonoBehaviour
         tunnelSegments = GameObject.Find("TunnelSegments");
     
         InitializeTunnel();
-
     }
 
     void InitializeTunnel(){
