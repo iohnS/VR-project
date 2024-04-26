@@ -22,6 +22,7 @@ public class Tunnel : MonoBehaviour
     Vector3[] tangents;
     private List<GameObject> segments;
     private float speed = 10.0f;
+    public GameObject tunnelSegments;
     void Start()
     {
         segments = new List<GameObject>();
@@ -32,6 +33,8 @@ public class Tunnel : MonoBehaviour
         normals = pathCreator.path.localNormals;
         tangents = pathCreator.path.localTangents;
 
+        tunnelSegments = GameObject.Find("TunnelSegments");
+    
         InitializeTunnel();
 
     }
@@ -48,7 +51,9 @@ public class Tunnel : MonoBehaviour
         if(idx == 0){
             idx = segIndex;
         }
-        segments.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
+        GameObject seg = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        segments.Add(seg);
+        seg.transform.parent = tunnelSegments.transform;
         GameObject currentSegment = segments.Last();
         currentSegment.transform.position = pathPoints[idx];
         currentSegment.transform.rotation = Quaternion.LookRotation(tangents[idx], normals[idx]);
