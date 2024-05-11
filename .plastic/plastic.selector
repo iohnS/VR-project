@@ -1,0 +1,4 @@
+repository "MAMF45@iohnS@cloud"
+  path "/"
+    br "/main"
+    co "/main"
