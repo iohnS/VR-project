@@ -11,6 +11,11 @@ public class CellGenerator : MonoBehaviour
     public float cellDistance = 20f;
     public float cellInterval = 0.5f;
     public GameObject ship;
+    public GameObject cellPrefab;
+    public GameObject redBloodCellPrefab;
+    public GameObject whiteBloodCellPrefab;
+    public float whiteCellRatio = 0.5f;
+    private System.Random random = new System.Random();
 
     private float timer = 0.0f;
 
@@ -20,7 +25,13 @@ public class CellGenerator : MonoBehaviour
     }
 
     void CreateCell(){
-        var cell = GameObject.CreatePrimitive(PrimitiveType.Cube).AddComponent<Cell>();
+        Cell cell;
+        if(random.NextDouble() < whiteCellRatio){
+            cell = Instantiate(whiteBloodCellPrefab).AddComponent<Cell>();
+        } else {
+            cell = Instantiate(redBloodCellPrefab).AddComponent<Cell>();
+        }
+        
         cell.transform.parent = transform;
         cell.ship = ship;
         cell.speed = speed;
